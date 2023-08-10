@@ -9,8 +9,8 @@ function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };  return (
-    <div className='flex justify-between sm:py-4 py-10 bg-yellow-500  w-full z-[999] '>
-        <h1 className='font-bold text-3xl pl-10 font-serif shadow-b'>Prakash</h1>
+    <div className='flex justify-between sm:py-4 py-6 bg-yellow-500  w-full z-[999] '>
+        <h1 className='font-bold sm:text-3xl text-2xl pl-10 font-serif shadow-b'>Prakash</h1>
         <div className='hidden md:flex pr-10'>
           <ul className='flex gap-10'>
             {data.menuItems.map((item:{name:string,href:string},index:number)=>{
@@ -30,7 +30,7 @@ function Navbar() {
           {isMenuOpen ? <MdClose onClick={toggleMenu} className="mr-6"/>:<BiMenu onClick={toggleMenu} className="mr-6"/>}
         </div>
         {isMenuOpen && <div className={(isMenuOpen ? "block" : "hidden") + " md:hidden absolute left-6 right-6"}>
-          <nav className="flex flex-col items-center self-end py-6 mt-10 space-y-6 bg-white drop-shadow-md">
+          <nav className="flex flex-col items-center self-end py-6 mt-10 space-y-6 bg-yellow-200 drop-shadow-md">
             {data.menuItems.map((item:{name:string,href:string}) => (
               <li key={item.name} className="list-none">
                 <Link

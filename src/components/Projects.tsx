@@ -35,13 +35,13 @@ function Projects() {
   return (
     <div id='#projects'>
       <h1 className='text-center font-bold text-3xl'>Projects</h1>
-      <div className='mx-10 mt-10'>
+      <div className='sm:mx-10 mt-10 mx-6'>
         <Slider {...settings}>
           {data.Projects.map((item:{name:string,image:string,codeurl:string,websiteurl:string,desc:string,tags:Array<string>})=>(
             <div key={item.name} className='my-10'>
               <div className='mx-5 flex flex-col gap-10 border-2 shadow-lg pb-5 cursor-pointer group relative'>
                 <div className=''>
-                  <img src={item.image} alt={item.name} className='object-fill h-60 mx-auto'/>
+                  <img src={item.image} alt={item.name} className='object-fill  h-60 mx-auto'/>
                 </div>
                 <div className="flex flex-wrap mb-4">
                     {item.tags.map((tag, index) => (
