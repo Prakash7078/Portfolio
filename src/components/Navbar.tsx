@@ -9,7 +9,7 @@ function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };  return (
-    <div className='flex justify-between sm:py-4 py-10 bg-yellow-500 fixed w-full z-[999] '>
+    <div className='flex justify-between sm:py-4 py-10 bg-yellow-500  w-full z-[999] '>
         <h1 className='font-bold text-3xl pl-10 font-serif shadow-b'>Prakash</h1>
         <div className='hidden md:flex pr-10'>
           <ul className='flex gap-10'>
