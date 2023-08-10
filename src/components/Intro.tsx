@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import boy from '/images/boy.avif';
 function Intro() {
   return (
-    <section id="#home" className="text-black body-font pt-20 pb-20 bg-yellow-400">
+    <section id="#home" className="text-black body-font pt-5 pb-20 bg-yellow-400">
       <div className="p-5 mx-auto gap-2 flex flex-col-reverse md:pt-12 md:px-7 lg:py-20 md:flex-row-reverse items-center min-h-fit">
         <div className="mr-0 sm:mr-10 ">
           <img
