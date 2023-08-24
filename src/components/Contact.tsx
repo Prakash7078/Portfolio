@@ -59,7 +59,7 @@ const Contact = () => {
         >
           {isMessageOpen && (
             <div className="lg:col-span-2 text-center bg-red-400 py-4 rounded-md font-medium">
-              Submitted
+              Message Submitted
             </div>
           )}
           <div className="">
