@@ -1,20 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import data from '../data';
 import { Link } from "react-scroll";
 import { BiMenu } from  'react-icons/bi'
+import {motion} from 'framer-motion';
 import { MdClose } from "react-icons/md";
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const toggleMenu = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // The behavior you're experiencing is because the console.log statement is executed immediately after the setIsMenuOpen function is called, and it's logging the current state value, which is still the previous state value due to React's asynchronous state updates.
+  const toggleMenu =() => {
     setIsMenuOpen(!isMenuOpen);
-  };  return (
+    console.log(isMenuOpen);
+  };
+  
+
+  return (
     <div className='flex justify-between sm:py-4 py-6 bg-yellow-500  w-full z-[999] '>
-        <h1 className='font-bold sm:text-3xl text-2xl pl-10 font-serif shadow-b'>Prakash</h1>
-        <div className='hidden md:flex pr-10'>
+        <motion.h1 
+        initial={{x:-100}}
+        whileInView={{x:0}}
+        transition={{duration:0.7}}
+        >
+          <h1 className='font-bold sm:text-3xl text-2xl pl-10 font-serif shadow-b'>Prakash</h1>
+        </motion.h1>    
+            
+        <div className='hidden md:flex pr-16'>
           <ul className='flex gap-10'>
             {data.menuItems.map((item:{name:string,href:string},index:number)=>{
-              return <li key={index}>
+              return <motion.li
+              initial={{ x:100 }}
+              whileInView={{ x: 0 }}
+              transition={{ duration:0.7 }}><li key={index}>
                 <Link 
                 to={item.href}
                 smooth={true}
@@ -23,6 +38,7 @@ function Navbar() {
                 >{item.name}
                 </Link>
               </li>
+              </motion.li>
             })}
           </ul>
         </div>

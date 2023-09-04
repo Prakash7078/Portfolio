@@ -1,17 +1,25 @@
 import React from "react";
+import {motion} from 'framer-motion'
 import about from '/images/about.jpg'
 const About = () => {
   return (
     <div id="#about" className="bg-slate-50 py-10">
       <div className="max-w-7xl mx-auto px-8">
         <div className="lg:flex lg:items-center lg:gap-x-8">
-          <div className="w-full lg:w-1/2">
+        <motion.div
+        initial={{y:100}}
+        whileInView={{y:0}}
+        transition={{duration:0.7}}
+        className="w-full lg:w-1/2"
+          >
+          <div >
             <img
               className="w-full h-auto object-cover rounded-lg"
               src={about}
               alt="my-image"
             />
           </div>
+          </motion.div>
           <div className="mt-8 lg:mt-0 lg:w-1/2">
             <div className="px-4 py-8 md:py-10 lg:py-12">
               <h2 className="text-3xl font-bold mb-4">About Me</h2>

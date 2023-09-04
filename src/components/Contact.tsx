@@ -4,7 +4,7 @@ import { HiMail, HiOutlinePhone } from "react-icons/hi";
 import { FiMail } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
 import emailjs from "@emailjs/browser";
-
+import {motion} from 'framer-motion';
 const Contact = () => {
   const [isMessageOpen, setMessageOpen] = useState(false);
   const form = useRef();
@@ -35,22 +35,27 @@ const Contact = () => {
       <h2 className="my-8 text-xl md:text-3xl text-center">
         Turn on the lights & let's connect
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 ">
-        <div className="flex w-4/5 gap-2 md:flex-col items-center py-2 px-2 md:px-4 md:w-auto bg-stone-700 text-white rounded-md">
-          <div>
-            <FaPhoneAlt />
+      <motion.div
+        initial={{x:-100}}
+        whileInView={{x:0}}
+        transition={{duration:0.7}}>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 ">
+          <div className="flex w-4/5 gap-2 md:flex-col items-center py-2 px-2 md:px-4 md:w-auto bg-stone-700 text-white rounded-md">
+            <div>
+              <FaPhoneAlt />
+            </div>
+            <p>+91 9704688559</p>
           </div>
-          <p>+91 9704688559</p>
-        </div>
-        <div className="flex w-4/5 gap-2 md:flex-col items-center py-2 px-2 md:px-4 md:w-auto bg-stone-700 text-white rounded-md">
-          <div>
-            <HiMail />
+          <div className="flex w-4/5 gap-2 md:flex-col items-center py-2 px-2 md:px-4 md:w-auto bg-stone-700 text-white rounded-md">
+            <div>
+              <HiMail />
+            </div>
+            <p>
+              <a href="mailto:ponduriprakash7078@gmail.com" className="text-white hover:text-white">ponduriprakash7078@gmail.com</a>
+              </p>
           </div>
-          <p>
-            <a href="mailto:ponduriprakash7078@gmail.com" className="text-white hover:text-white">ponduriprakash7078@gmail.com</a>
-            </p>
         </div>
-      </div>
+      </motion.div>
       <div className="w-4/5 md:w-3/5 my-8 mx-auto rounded-md">
         <form
           className="grid grid-cols-1 lg:grid-cols-2 gap-6"
@@ -62,6 +67,10 @@ const Contact = () => {
               Message Submitted
             </div>
           )}
+          <motion.div
+            initial={{y:100}}
+            whileInView={{y:0}}
+            transition={{duration:0.7}}>
           <div className="">
             <div className="flex gap-2 items-center p-4 my-2 border-2 border-black rounded-md">
               <CgProfile size={20} />
@@ -103,6 +112,7 @@ const Contact = () => {
               />
             </div>
           </div>
+          </motion.div>
           <textarea
             name="message"
             id="message"
@@ -116,7 +126,7 @@ const Contact = () => {
           <div>
             <button
               type="submit"
-              className="bg-stone-700 text-white px-4 py-2 rounded-md md:w-1/2"
+              className="bg-stone-700 text-white px-4 py-2 rounded-md md:w-1/2 hover:translate-x-16 duration-1000"
             >
               Send message
             </button>
