@@ -76,6 +76,30 @@ const data={
             ],  
         },
         {
+            name:"Land Rent For Farming",
+            image:"/images/feild.png",
+            codeurl:"https://github.com/Prakash7078/LandRentForFarming",
+            websiteurl:"https://p-todo.vercel.app/",
+            desc:"Website is used for finding feilds in different places for farming by contacting to owners.",
+            tags: [
+                "#Next JS",
+                '#Tailwind CSS',
+                "#Node.js",
+                "#MongoDB",
+            ],  
+        },
+        {
+            name:"Food Share App",
+            image:"/images/thumbanaliaPP.png",
+            codeurl:"https://github.com/Prakash7078/FoodShare",
+            websiteurl:"https://github.com/Prakash7078/FoodShare",
+            desc:"App used to share food to trusts, old age homes and footpath people by adding food and contacting to food share communities.",
+            tags: [
+                "#React-Native",
+                "#Firebase",
+            ],  
+        },
+        {
             name:"Old Portfolio",
             image:"/images/port.png",
             codeurl:"https://github.com/Prakash7078/PortfolioFrontend",
