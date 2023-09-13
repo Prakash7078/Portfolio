@@ -116,22 +116,6 @@ const data={
             ],
         },
         {
-            name:"Amigos",
-            image:"/images/Amigos.png",
-            codeurl:"https://github.com/Prakash7078/AmigosFrontend",
-            websiteurl:"https://amigos-j7xz.onrender.com/",
-            desc:"Amigos website which used to add memories with friends or family.",
-            tags: [
-                "#React",
-                '#MaterialUI',
-                "#JWT",
-                "#Redux-toolkit",
-                "#Node.js",
-                "#Express.js",
-                "#MongoDB",
-            ],
-        },
-        {
             name:"FlappyBird",
             image:"/images/flappy-bird.jpg",
             codeurl:"https://github.com/Prakash7078/Unity-FlappyBird",
