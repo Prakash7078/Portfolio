@@ -41,13 +41,12 @@ const Blogs = () => {
     <div id="#blogs" className="relative w-full py-10 bg-white">
       <div className="mx-auto max-w-7xl px-8">
         <h1 className="text-3xl font-bold mb-10 text-center">Blogs</h1>
-        <motion.div
-          initial={{y:100}}
-          whileInView={{y:0}}
-          transition={{duration:0.7}}>
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {blogs.map((blog) => (
-              <div key={blog.slug} className="rounded-md border border-black">
+              <motion.div
+              initial={{scale:0.8}}
+              whileInView={{scale:1}}
+              transition={{duration:1}} key={blog.slug} className="rounded-md border border-black">
                 <img
                   src={blog.coverImage}
                   alt={blog.title}
@@ -67,10 +66,9 @@ const Blogs = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </motion.div>
       </div>
     </div>
   );

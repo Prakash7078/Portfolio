@@ -43,7 +43,7 @@ function Navbar() {
           </ul>
         </div>
         <div className='md:hidden'>
-          {isMenuOpen ? <MdClose onClick={toggleMenu} className="mr-6"/>:<BiMenu onClick={toggleMenu} className="mr-6"/>}
+          {isMenuOpen ? <MdClose size={25} onClick={toggleMenu} className="mr-6"/>:<BiMenu size={25} onClick={toggleMenu} className="mr-6"/>}
         </div>
         {isMenuOpen && <div className={(isMenuOpen ? "block" : "hidden") + " md:hidden absolute left-6 right-6"}>
           <nav className="flex flex-col items-center self-end py-6 mt-10 space-y-6 bg-yellow-200 drop-shadow-md">

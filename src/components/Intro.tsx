@@ -10,13 +10,13 @@ function Intro() {
     <section id="#home" className="text-black body-font pt-5 pb-20 bg-yellow-400 ">
       <div className="p-5 mx-auto gap-2 flex flex-col-reverse md:pt-12 md:px-7 lg:py-20 md:flex-row-reverse items-center min-h-fit" >
       <motion.div
-          initial={{ scale: 0, rotate: 0 }}
-          whileInView={{ scale: 1, rotate: 360 }}
+          initial={{ scale: 0, rotate: 0}}
+          whileInView={{ scale: 1, rotate: 360}}
           transition={{ duration: 0.7 }}
         >
           <div className="mr-0 sm:mr-10">
             <motion.img
-              className="object-cover border-2 border-white cursor-pointer md:hover:scale-110 transition duration-1000 ease-in-out rounded-3xl h-72 w-96 mt-24 md:mt-0"
+              className="object-cover border-2 border-yellow-800 cursor-pointer md:hover:scale-110 transition duration-1000 ease-in-out rounded-3xl h-72 w-96 mt-24 md:mt-0"
               alt="hero"
               src={boy}
               initial={{ scale: 1 }} // Initial scale
@@ -62,7 +62,7 @@ function Intro() {
             whileInView={{y:0}}
             transition={{duration:0.7}}
             >
-              <button className="inline-flex sm:font-medium border-2 border-red-500 sm:py-3 px-10 focus:outline-none hover:bg-orange-600 hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10 bg-white">
+              <button className="inline-flex sm:font-medium border-2 border-red-500 sm:py-3 py-2 px-10 focus:outline-none hover:bg-orange-600 hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10 bg-white">
                 <Link to="#contact" spy={true} smooth={true} offset={-100} duration={750} className="text-black hover:text-black ">
                   Hire Me
                 </Link>
@@ -74,7 +74,7 @@ function Intro() {
             transition={{duration:0.7}}
             >
               <a href="https://drive.google.com/file/d/1N9D9u0b8RbhA4AJFDCtQ-PYc1yoayi_L/view?usp=sharing" target='_blank' rel='noreferrer' >
-                <button className=" text-black inline-flex sm:font-medium  bg-orange-600 border-2  sm:py-3 px-7 focus:outline-none hover:bg-white hover:border-orange-600 hover:text-black rounded-full text-md xl:px-10">
+                <button className=" text-black inline-flex sm:font-medium py-2  bg-orange-600 border-2  sm:py-3 px-7 focus:outline-none hover:bg-white hover:border-orange-600 hover:text-black rounded-full text-md xl:px-10">
                   Get Resume
                 </button>
               </a>

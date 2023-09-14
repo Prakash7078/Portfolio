@@ -4,12 +4,17 @@ import about from '/images/about.jpg'
 const About = () => {
   return (
     <div id="#about" className="bg-slate-50 py-10">
-      <div className="max-w-7xl mx-auto px-8">
+       <motion.div
+          initial={{opacity:0}}
+          whileInView={{opacity:1}}
+          transition={{duration:1}}
+          className="max-w-7xl mx-auto px-8"
+          >
         <div className="lg:flex lg:items-center lg:gap-x-8">
         <motion.div
-        initial={{y:100}}
-        whileInView={{y:0}}
-        transition={{duration:0.7}}
+        initial={{y:100,opacity:0}}
+        whileInView={{y:0,opacity:1}}
+        transition={{duration:1}}
         className="w-full lg:w-1/2"
           >
           <div >
@@ -44,7 +49,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+        </motion.div>
     </div>
   );
 };

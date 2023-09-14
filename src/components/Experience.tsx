@@ -7,9 +7,10 @@ function Experience() {
     <div className='mb-10' id='#experience'>
         <h1 className='font-bold text-center text-3xl my-20'>Experiences</h1>
         <motion.div
-        initial={{x:-100}}
-        whileInView={{x:0}}
-        transition={{duration:0.7}}>
+        initial={{y:100}}
+        whileInView={{y:0}}
+        transition={{duration:1}}
+        >
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 mx-0 sm:mx-10">
               {data.Experinces.map((item:{name:string,company:string,duration:string,offer:string,certi:string,desc:string})=>(
                       <div className='flex flex-col w-fit gap-3 px-4 py-6 cursor-pointer bg-gray-200 sm:mx-auto mx-10 shadow-lg hover:scale-105 transition-all duration-500 text-center sm:text-start'>

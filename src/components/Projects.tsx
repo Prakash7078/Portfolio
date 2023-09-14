@@ -35,15 +35,15 @@ function Projects() {
   };
   return (
     <div id='#projects'>
-      <h1 className='text-center font-bold text-3xl'>Projects</h1>
-      <motion.div
-        initial={{scale:0.5}}
-        whileInView={{scale:1}}
-        transition={{duration:0.7}}>
+      <h1 className='text-center font-bold text-3xl mt-5'>Projects</h1>
         <div className='sm:mx-10 mt-10 mx-6'>
           <Slider {...settings}>
             {data.Projects.map((item:{name:string,image:string,codeurl:string,websiteurl:string,desc:string,tags:Array<string>})=>(
               <div key={item.name} className='my-10'>
+                 <motion.div
+                    initial={{scale:0.5}}
+                    whileInView={{scale:1}}
+                    transition={{duration:1}}>
                 <div className='mx-5 flex flex-col gap-10 border-2 shadow-lg pb-5 sm:h-96 h-fit cursor-pointer group relative'>
                   <div className=''>
                     <img src={item.image} alt={item.name} className='object-fill  h-60 mx-auto'/>
@@ -65,8 +65,9 @@ function Projects() {
                       <a className='text-white' href={item.codeurl} target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                       <a className='text-white' href={item.websiteurl} target="_blank" rel="noopener noreferrer"><FaExternalLinkAlt /></a>
                     </div>
+                  </div>
                 </div>
-                </div>
+                </motion.div>
               </div>
             ))}
           </Slider>
@@ -82,7 +83,6 @@ function Projects() {
                     }
                   `}</style>
         </div>
-      </motion.div>
     </div>
   )
 }
