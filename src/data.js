@@ -62,7 +62,7 @@ const data={
             name:"College Clubs Website",
             image:"/images/clubs.png",
             codeurl:"https://github.com/Prakash7078/ecommerce",
-            websiteurl:"https://mern-ecommerce-a2si.onrender.com/",
+            websiteurl:"https://vvit-clubs.vercel.app/",
             desc:"My College Clubs website for registrations on fridays.",
             tags: [
                 "#Vite",
@@ -232,6 +232,16 @@ const data={
           id: "14",
           name: "Unity",
           image:"/images/unity.png",
+        },
+        {
+          id: "15",
+          name: "Next JS",
+          image:"/images/next.webp",
+        },
+        {
+          id: "16",
+          name: "React Native",
+          image:"/images/react-native.webp",
         },
     ]
 };

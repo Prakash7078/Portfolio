@@ -10,7 +10,7 @@ function Intro() {
     <section id="#home" className="text-black body-font pt-5 pb-20 bg-yellow-400 ">
       <div className="p-5 mx-auto gap-2 flex flex-col-reverse md:pt-12 md:px-7 lg:py-20 md:flex-row-reverse items-center min-h-fit" >
       <motion.div
-          initial={{ scale: 0, rotate: 0}}
+          initial={{ scale: 0, rotate: 300}}
           whileInView={{ scale: 1, rotate: 360}}
           transition={{ duration: 0.7 }}
         >

@@ -1,31 +1,44 @@
 import React from 'react'
 import data from '../data';
-import {motion} from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import work from '/images/workgif.gif'
+import '@splidejs/react-splide/css';
 function Experience() {
   return (
     <div className='mb-10' id='#experience'>
         <h1 className='font-bold text-center text-3xl my-20'>Experiences</h1>
-        <motion.div
-        initial={{y:100}}
-        whileInView={{y:0}}
-        transition={{duration:1}}
-        >
-          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 mx-0 sm:mx-10">
+          <div >
+            <Splide
+                options={{
+                  rewind:true,
+                  perPage: 1,
+                  dots:true,
+                  speed: 2000,
+                  arrows:true,
+                  interval: 2000,
+                  autoplay:false,
+                }}
+                aria-label="React Splide Example"
+                data-splide-interval="1000"
+              >
               {data.Experinces.map((item:{name:string,company:string,duration:string,offer:string,certi:string,desc:string})=>(
-                      <div className='flex flex-col w-fit gap-3 px-4 py-6 cursor-pointer bg-gray-200 sm:mx-auto mx-10 shadow-lg hover:scale-105 transition-all duration-500 text-center sm:text-start'>
-                          <h1 className='font-bold text-2xl'>{item.name}</h1>
-                          <p className=''>{item.company}</p>
-                          <p>{item.duration}</p>
-                          <p className=''>{item.desc}</p>
-                          <div className='flex justify-evenly mt-2'>
-                              <Link to={item.offer}><button className='text-orange-500 shadow-lg  px-4 py-1'>Offer</button></Link>
-                              {item.certi && <Link to={item.certi}><button className='text-orange-500 shadow-lg  px-4 py-1'>Complete</button></Link>}
+                      <SplideSlide  className="grid grid-cols-1 sm:grid-cols-2">
+                          <div><img src={work} alt='gif' className='px-16'/></div>
+                          <div className='flex flex-col w-fit gap-3 px-4 py-6 cursor-pointer sm:mx-auto mx-10  hover:scale-105 transition-all duration-500 text-center sm:text-start'>
+                            <h1 className='font-bold text-2xl'>{item.name}</h1>
+                            <p className=''>{item.company}</p>
+                            <p>{item.duration}</p>
+                            <p className=''>{item.desc}</p>
+                            <div className='flex justify-evenly mt-2'>
+                                <Link to={item.offer}><button className='  shadow-inner border-2 border-b-rose-200  px-8 py-1'>Offer</button></Link>
+                                {item.certi && <Link to={item.certi}><button className='border-2 border-b-rose-200 shadow-inner px-8 py-1'>Complete</button></Link>}
+                            </div>
                           </div>
-                      </div>
+                      </SplideSlide>
               ))}
+            </Splide>
           </div>
-        </motion.div>
     </div>
   )
 }

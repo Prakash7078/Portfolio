@@ -41,7 +41,7 @@ function Projects() {
             {data.Projects.map((item:{name:string,image:string,codeurl:string,websiteurl:string,desc:string,tags:Array<string>})=>(
               <div key={item.name} className='my-10'>
                  <motion.div
-                    initial={{scale:0.5}}
+                    initial={{scale:0.6}}
                     whileInView={{scale:1}}
                     transition={{duration:1}}>
                 <div className='mx-5 flex flex-col gap-10 border-2 shadow-lg pb-5 sm:h-96 h-fit cursor-pointer group relative'>

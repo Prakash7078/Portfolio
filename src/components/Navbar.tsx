@@ -18,7 +18,7 @@ function Navbar() {
         <motion.h1 
         initial={{x:-100}}
         whileInView={{x:0}}
-        transition={{duration:0.7}}
+        transition={{duration:1}}
         >
           <h1 className='font-bold sm:text-3xl text-2xl pl-10 font-serif shadow-b'>Prakash</h1>
         </motion.h1>    
