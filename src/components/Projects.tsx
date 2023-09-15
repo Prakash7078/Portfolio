@@ -10,6 +10,7 @@ function Projects() {
     dots: true,
     infinite: true,
     speed: 500,
+    focusOnSelect:true,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -20,16 +21,19 @@ function Projects() {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint:768,
         settings: {
-          slidesToShow: 1,
-        },
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-        },
+          slidesToScroll: 1
+        }
       },
     ],
   };
@@ -44,7 +48,7 @@ function Projects() {
                     initial={{scale:0.6}}
                     whileInView={{scale:1}}
                     transition={{duration:1}}>
-                <div className='mx-5 flex flex-col gap-10 border-2 shadow-lg pb-5 sm:h-96 h-fit cursor-pointer group relative'>
+                <div className='sm:mx-5 flex flex-col gap-10 border-2 shadow-lg pb-5 sm:h-96 h-fit cursor-pointer group relative'>
                   <div className=''>
                     <img src={item.image} alt={item.name} className='object-fill  h-60 mx-auto'/>
                   </div>
