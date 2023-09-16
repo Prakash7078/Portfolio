@@ -8,6 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Skills from "./components/Skills"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import { ToastContainer } from "react-toastify"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Skills/>
       <Contact/>
       <Footer/>
+      <ToastContainer position="bottom-center" bodyClassName="text-center font-bold text-blue-900"/>
     </div>
     </BrowserRouter>
   )

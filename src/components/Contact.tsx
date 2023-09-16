@@ -4,14 +4,16 @@ import { HiMail, HiOutlinePhone } from "react-icons/hi";
 import { FiMail } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
 import emailjs from "@emailjs/browser";
+import {toast} from 'react-toastify';
 import {motion} from 'framer-motion';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
-  const [isMessageOpen, setMessageOpen] = useState(false);
   const form = useRef();
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+  const[message,setMessage]=useState("");
   const handleSubmit = (e) => {
     e.preventDefault();  
     emailjs.sendForm('service_60deouj', 'template_fh1hh3e', form.current, 'SEYplcctvMg-dG9Uk')
@@ -20,12 +22,11 @@ const Contact = () => {
     },(error) => {
       console.log(error.text);
     });
-    setMessageOpen(true);
     setName("");
     setMail("");
     setPhone("");
     setMessage("");
-    setTimeout(() => setMessageOpen(false), 1000);
+    toast.success("Message send succesfully");
   };
   return (
     <section className="flex-1" id="#contact">
@@ -62,11 +63,6 @@ const Contact = () => {
           onSubmit={handleSubmit}
           ref={form}
         >
-          {isMessageOpen && (
-            <div className="lg:col-span-2 text-center bg-red-400 py-4 rounded-md font-medium">
-              Message Submitted
-            </div>
-          )}
           <motion.div
             initial={{y:100}}
             whileInView={{y:0}}
