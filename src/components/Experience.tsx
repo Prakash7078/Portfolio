@@ -31,8 +31,8 @@ function Experience() {
                             <p>{item.duration}</p>
                             <p className=''>{item.desc}</p>
                             <div className='flex justify-evenly mt-2'>
-                                <Link to={item.offer}><button className='  shadow-inner border-2 border-b-rose-200  px-8 py-1'>Offer</button></Link>
-                                {item.certi && <Link to={item.certi}><button className='border-2 border-b-rose-200 shadow-inner px-8 py-1'>Complete</button></Link>}
+                                <Link to={item.offer} target='_blank'><button className='  shadow-inner border-2 border-b-rose-200  px-8 py-1'>Offer</button></Link>
+                                {item.certi && <Link to={item.certi}  target='_blank'><button className='border-2 border-b-rose-200 shadow-inner px-8 py-1'>Complete</button></Link>}
                             </div>
                           </div>
                       </SplideSlide>

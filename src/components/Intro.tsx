@@ -5,6 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import leetcode from '/images/leetcode.png';
 import {motion} from 'framer-motion';
 import boy from '/images/boy.avif';
+import {PiCertificateFill} from 'react-icons/pi'
 function Intro() {
   return (
     <section id="#home" className="text-black body-font pt-5 pb-20 bg-yellow-400 ">
@@ -26,13 +27,14 @@ function Intro() {
         </motion.div>
         <div className="lg:flex-grow lg:pr-4 lg:mr-14 flex flex-col md:mb-0 items-center text-center">
           <motion.div
-          initial={{x:-100}}
-          whileInView={{x:0}}
+          initial={{scale:0.5}}
+          whileInView={{scale:1}}
           transition={{duration:0.7}}>
           <div className="flex gap-5 my-4">
             <a className="text-black text-2xl md:text-xl hover:scale-125" href="https://github.com/Prakash7078" target="_blank" rel="noreferrer"><FaGithub /></a>
             <a className="text-black text-2xl md:text-xl hover:scale-125" href="https://www.linkedin.com/in/prakash7078/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
             <a className="text-black text-2xl md:text-xl hover:scale-125 w-5" href="https://leetcode.com/Prakash_7078/" rel="noreferrer" target="_blank"><img src={leetcode} alt='leetcode'/></a>
+            <a className="text-black text-2xl md:text-xl hover:scale-125 w-5" href="https://drive.google.com/drive/folders/1X39-5TitgldeoQ9uJD-ot27UM2VNph6b?usp=sharing" rel="noreferrer" target="_blank"><PiCertificateFill/></a>
           </div>
           </motion.div>
           <motion.h2
@@ -73,7 +75,7 @@ function Intro() {
             whileInView={{y:0}}
             transition={{duration:0.7}}
             >
-              <a href="https://drive.google.com/file/d/1N9D9u0b8RbhA4AJFDCtQ-PYc1yoayi_L/view?usp=sharing" target='_blank' rel='noreferrer' >
+              <a href="https://drive.google.com/file/d/1j6OrW4iWNptRH8dcENT2FIJFRA8eD3-W/view?usp=sharing" target='_blank' rel='noreferrer' >
                 <button className=" text-black inline-flex sm:font-medium py-2  bg-orange-600 border-2  sm:py-3 px-7 focus:outline-none hover:bg-white hover:border-orange-600 hover:text-black rounded-full text-md xl:px-10">
                   Get Resume
                 </button>
