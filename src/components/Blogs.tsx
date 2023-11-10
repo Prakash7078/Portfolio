@@ -46,7 +46,8 @@ const Blogs = () => {
               <motion.div
               initial={{scale:0.8}}
               whileInView={{scale:1}}
-              transition={{duration:1}} key={blog.slug} className="rounded-md border border-black">
+              transition={{duration:1}} 
+              key={blog.slug} className="rounded-md border border-black">
                 <img
                   src={blog.coverImage}
                   alt={blog.title}

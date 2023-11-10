@@ -23,13 +23,19 @@ function Experience() {
                 data-splide-interval="1000"
               >
               {data.Experinces.map((item:{name:string,company:string,duration:string,offer:string,certi:string,desc:string})=>(
-                      <SplideSlide  className="grid grid-cols-1 sm:grid-cols-2">
-                          <div><img src={work} alt='gif' className='px-16'/></div>
-                          <div className='flex flex-col w-fit gap-3 px-4 py-6 cursor-pointer sm:mx-auto mx-10  hover:scale-105 transition-all duration-500 text-center sm:text-start'>
+                      <SplideSlide  className="grid grid-cols-1 md:grid-cols-2">
+                          <div><img src={work} alt='gif' className='lg:px-16'/></div>
+                          <div className='flex flex-col w-fit gap-3 px-4 py-6 cursor-pointer md:mx-auto mx-10  hover:scale-105 transition-all duration-500 text-center md:text-start'>
                             <h1 className='font-bold text-2xl'>{item.name}</h1>
                             <p className=''>{item.company}</p>
                             <p>{item.duration}</p>
-                            <p className=''>{item.desc}</p>
+                            <p className='leading-loose pr-6'>{item.desc}</p>
+                            {data.projectslinks.filter((ite:{name:string})=>ite.name===item.name).map((it:{name:string,link1:string,link2:string})=>(
+                              <div key={it.name}>
+                                <Link to={it.link1} target='_blank'><p className='text-blue-800 mb-2'>{it.link1}</p></Link>
+                                <Link to={it.link2} target='_blank'><p className='text-blue-800 mb-2'>{it.link2}</p></Link>
+                              </div>
+                            ))}
                             <div className='flex justify-evenly mt-2'>
                                 <Link to={item.offer} target='_blank'><button className='  shadow-inner border-2 border-b-rose-200  px-8 py-1'>Offer</button></Link>
                                 {item.certi && <Link to={item.certi}  target='_blank'><button className='border-2 border-b-rose-200 shadow-inner px-8 py-1'>Complete</button></Link>}

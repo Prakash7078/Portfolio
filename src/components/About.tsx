@@ -1,4 +1,3 @@
-import React from "react";
 import {motion} from 'framer-motion'
 import about from '/images/about.jpg'
 const About = () => {

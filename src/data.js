@@ -140,7 +140,22 @@ const data={
             ],
         },
     ],
+    projectslinks:[
+      {
+        name:"Web Development Intern",
+        link1:"https://mythri-jewellers.vercel.app/",
+        link2:"https://atoms-group.vercel.app/",
+      }
+    ],
     Experinces:[
+      {
+        name:"Web Development Intern",
+        company:"Atoms Digital Solutions",
+        duration:"July 2023-Present",
+        offer:"https://drive.google.com/file/d/1XdDZTBvkdesbCHwAYSMfYfDl9JidPoO9/view?usp=sharing",
+        certi:"",
+        desc:"During my internship, I gained hands-on experience in developing complete projects, encompassing both frontend and backend aspects. This involved utilizing various AWS services, including AWS S3, EC2, and ECR.",
+      },
         {
             name:"Risk Analyst Intern",
             company:"Dynamatix Analytics Pvt Ltd",
@@ -149,14 +164,7 @@ const data={
             certi:"https://drive.google.com/file/d/1fFp0zxdpB5SlJRHNHMMShfO3k2Zilb2b/view?usp=sharing",
             desc:"Internship position with the Risk Analytics division.During my tenure as a Risk Analyst at a dynamic company, I excelled in creating flexes, controls, KRIS tools, and dashboards for visualizing and managing risks. My role involved designing action plans, constructing approver forms, and implementing automated email systems using Node.js. This experience honed my skills in risk analysis, data visualization, and process optimization. ",
         },
-        {
-            name:"Web Development Intern",
-            company:"Atoms Digital Solutions",
-            duration:"July 2023-Present",
-            offer:"https://drive.google.com/file/d/1XdDZTBvkdesbCHwAYSMfYfDl9JidPoO9/view?usp=sharing",
-            certi:"",
-            desc:"Experienced MERN stack web developer specializing in efficient and scalable web applications. Passionate about delivering high-quality code and creating seamless user experiences. Collaborating with a talented team at Atoms Group to bring innovative solutions to life. Let's turn your ideas into reality with cutting-edge technology.",
-        },
+        
     ],SkillsData : [
         {
           id: "1",

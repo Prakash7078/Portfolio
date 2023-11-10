@@ -14,16 +14,16 @@ function Navbar() {
   
 
   return (
-    <div className='flex justify-between sm:py-4 py-6 bg-yellow-500  w-full z-[999] '>
+    <div className='flex justify-between md:py-4 py-6 xl:py-10 bg-yellow-500  w-full z-[999] '>
         <motion.h1 
         initial={{x:-100}}
         whileInView={{x:0}}
         transition={{duration:1}}
         >
-          <h1 className='font-bold sm:text-3xl text-2xl pl-10 font-serif shadow-b'>Prakash</h1>
+          <h1 className='font-bold md:text-3xl text-2xl pl-10 font-serif shadow-b'>Prakash</h1>
         </motion.h1>    
             
-        <div className='hidden md:flex pr-16'>
+        <div className='hidden lg:flex pr-16'>
           <ul className='flex gap-10'>
             {data.menuItems.map((item:{name:string,href:string},index:number)=>{
               return <motion.li
@@ -42,10 +42,10 @@ function Navbar() {
             })}
           </ul>
         </div>
-        <div className='md:hidden'>
+        <div className='lg:hidden'>
           {isMenuOpen ? <MdClose size={25} onClick={toggleMenu} className="mr-6"/>:<BiMenu size={25} onClick={toggleMenu} className="mr-6"/>}
         </div>
-        {isMenuOpen && <div className={(isMenuOpen ? "block" : "hidden") + " md:hidden absolute left-6 right-6"}>
+        {isMenuOpen && <div className={(isMenuOpen ? "block" : "hidden") + " lg:hidden absolute left-6 right-6 z-[999]"}>
           <nav className="flex flex-col items-center self-end py-6 mt-10 space-y-6 bg-yellow-200 drop-shadow-md">
             {data.menuItems.map((item:{name:string,href:string}) => (
               <li key={item.name} className="list-none">
