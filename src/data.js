@@ -151,9 +151,9 @@ const data={
       {
         name:"Web Development Intern",
         company:"Atoms Digital Solutions",
-        duration:"July 2023-Present",
+        duration:"Sept 2023-Dec 2023",
         offer:"https://drive.google.com/file/d/1XdDZTBvkdesbCHwAYSMfYfDl9JidPoO9/view?usp=sharing",
-        certi:"",
+        certi:"https://drive.google.com/file/d/1MumZkFh0iwxoW1rSCfIxR3F9RJldp3G7/view?usp=sharing",
         desc:"During my internship, I gained hands-on experience in developing complete projects, encompassing both frontend and backend aspects. This involved utilizing various AWS services, including AWS S3, EC2, and ECR.",
       },
         {
@@ -163,6 +163,14 @@ const data={
             offer:"https://drive.google.com/file/d/1hO5vQNCZCeCUjT-0wTUmmym-CUVAvNjt/view?usp=sharing",
             certi:"https://drive.google.com/file/d/1fFp0zxdpB5SlJRHNHMMShfO3k2Zilb2b/view?usp=sharing",
             desc:"Internship position with the Risk Analytics division.During my tenure as a Risk Analyst at a dynamic company, I excelled in creating flexes, controls, KRIS tools, and dashboards for visualizing and managing risks. My role involved designing action plans, constructing approver forms, and implementing automated email systems using Node.js. This experience honed my skills in risk analysis, data visualization, and process optimization. ",
+        },
+         {
+            name:"Software Developer Intern",
+            company:"7 Dots Smart Solutions(OPC) Pvt Ltd, Hyderabad",
+            duration:"Dec 2023-June 2024",
+            offer:"https://drive.google.com/file/d/1cCozPlg45F4Qy1WANsiH0IeABicf9zvm/view?usp=sharing",
+            certi:"",
+            desc:"Currently I am working as Software Developer.",
         },
         
     ],SkillsData : [
