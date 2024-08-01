@@ -140,7 +140,7 @@ const data={
             company:"7 Dots Smart Solutions(OPC) Pvt Ltd, Hyderabad",
             duration:"Dec 2023-June 2024",
             offer:"https://drive.google.com/file/d/1cCozPlg45F4Qy1WANsiH0IeABicf9zvm/view?usp=sharing",
-            certi:"",
+            certi:"https://drive.google.com/file/d/1cyve2uX9QZpKNDFI8gm8dyxMkXCZZcyV/view?usp=sharing",
             desc:"Currently I am working as Software Developer.",
         },
         
