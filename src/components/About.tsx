@@ -28,13 +28,12 @@ const About = () => {
             <div className="px-4 py-8 md:py-10 lg:py-12">
               <h2 className="text-3xl font-bold mb-4">About Me</h2>
               <p className="text-lg mb-4">
-                Hi, I'm Prakash, a Full Stack Web Developer with a focus on MERN
-                stack (MongoDB, Express.js, React.js, and Node.js). I have a
-                passion for creating web applications that provide seamless user
+                Hi, I'm Prakash, a Software developer. I have a
+                passion for creating web or mobile app applications that provide seamless user
                 experiences and solve real-world problems.
               </p>
               <p className="text-lg mb-4">
-                I have built numerous web applications, ranging from e-commerce
+                I have built numerous web and mobile app applications, ranging from e-commerce
                 platforms to social networking sites. My expertise lies in
                 designing and developing scalable and efficient solutions that
                 adhere to industry best practices.

@@ -230,6 +230,16 @@ const data={
           name: "React Native",
           image:"/images/react-native.webp",
         },
+        {
+          id: "17",
+          name: "Angular",
+          image:"/images/angular.png",
+        },
+        {
+          id: "18",
+          name: "Ionic Framework",
+          image:"/images/ionic.png",
+        },
     ]
 };
 export default data;

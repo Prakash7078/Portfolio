@@ -6,11 +6,11 @@ import {motion} from 'framer-motion';
 import { MdClose } from "react-icons/md";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // The behavior you're experiencing is because the console.log statement is executed immediately after the setIsMenuOpen function is called, and it's logging the current state value, which is still the previous state value due to React's asynchronous state updates.
-  const toggleMenu =() => {
-    setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
+  const toggleMenu = () => {
+    console.log("Menu toggle clicked");
+    setIsMenuOpen(prevState => !prevState);
   };
+ 
   
 
   return (
@@ -43,18 +43,19 @@ function Navbar() {
           </ul>
         </div>
         <div className='lg:hidden'>
-          {isMenuOpen ? <MdClose size={25} onClick={toggleMenu} className="mr-6"/>:<BiMenu size={25} onClick={toggleMenu} className="mr-6"/>}
+          {!isMenuOpen ? <BiMenu size={25} onClick={toggleMenu} className="mr-6"/> : <MdClose size={25} onClick={toggleMenu} className="mr-6 bg-yellow-700 rounded-full "/>}
         </div>
-        {isMenuOpen && <div className={(isMenuOpen ? "block" : "hidden") + " lg:hidden absolute left-6 right-6 z-[999]"}>
+        {<div className={(isMenuOpen ? "block" : "hidden") + " lg:hidden absolute left-6 right-6 z-[999]"}>
           <nav className="flex flex-col items-center self-end py-6 mt-10 space-y-6 bg-yellow-200 drop-shadow-md">
             {data.menuItems.map((item:{name:string,href:string}) => (
-              <li key={item.name} className="list-none">
+              <li  key={item.name} className="list-none">
                 <Link
                   to={item.href}
                   duration={300}
                   smooth={true}
+                  onClick={toggleMenu}
                   className="capitalize text-black font-bold text-2xl"
-                  onClick={() => toggleMenu()}
+                  
                 >
                   {item.name}
                 </Link>

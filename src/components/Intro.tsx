@@ -48,16 +48,16 @@ function Intro() {
           <div className="text-3xl  mb-4 font-medium lg:inline-block">
             <span className='text-darkblue'>{"_"}</span>
             <Typewriter 
-                words={['Web Developer','UI/UX Designer','Enthusiastic Dev']} 
+                words={['Web Developer','Software Developer','Enthusiastic Dev']} 
                 loop={false} 
                 typeSpeed={100} 
                 deleteSpeed={100} 
                 delaySpeed={1000}/>
           </div>
-          <p className="mb-2  text-lg md:text-xl leading-relaxed">
-          Adeptness in developing full-stack applications using the MERN stack.
+          <p className="text-lg md:text-xl">
+            Passionate about designing and developing innovative web and mobile applications.
           </p>
-          <p className="text-lg  md:text-xl">I enjoy designing tech websites.</p>
+        
           <div className="mt-7 flex gap-x-4 md:gap-x-5 justify-center md:justify-between">
             <motion.button
             initial={{y:-100}}
@@ -75,7 +75,7 @@ function Intro() {
             whileInView={{y:0}}
             transition={{duration:0.7}}
             >
-              <a href="https://drive.google.com/file/d/1-06yk6LKI6p-Y5Pr8U6ldSt7nEjmQI8-/view?usp=sharing" target='_blank' rel='noreferrer' >
+              <a href="https://drive.google.com/file/d/102E7Bea4pMRcMQlxHymDve-eBXl5BqgZ/view?usp=sharing" target='_blank' rel='noreferrer' >
                 <button className=" text-black inline-flex sm:font-medium py-2  bg-orange-600 border-2  sm:py-3 px-7 focus:outline-none hover:bg-white hover:border-orange-600 hover:text-black rounded-full text-md xl:px-10">
                   Get Resume
                 </button>
@@ -84,6 +84,7 @@ function Intro() {
           </div>
         </div>
       </div>
+      
     </section>
   )
 }

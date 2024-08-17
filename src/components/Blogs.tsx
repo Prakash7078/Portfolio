@@ -5,10 +5,13 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const response = await axios.post("https://api.hashnode.com/", {
-          query: `
+    async function gql() {
+      await fetch('https://api.hashnode.com/', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({query: `
             {
               user(username: "chandra7078") {
                 publication {
@@ -21,20 +24,17 @@ const Blogs = () => {
                 }
               }
             }
-          `,
-        });
-        const { data } = response.data;
-        console.log(data);
+          `,}),
+      }).then(response=>{return response.json()}).then(data=>{
         if (data && data.user && data.user.publication) {
           const { posts } = data.user.publication;
           setBlogs(posts);
         }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchBlogs();
+      }).catch(err=>console.log(err));
+      
+  
+    }
+    gql();
   }, []);
 
   return (
