@@ -14,13 +14,13 @@ function Navbar() {
   
 
   return (
-    <div className='flex justify-between md:py-4 py-6 xl:py-10 bg-yellow-500  w-full z-[999] '>
+    <div className='flex justify-between md:py-4 lg:py-6 py-6 xl:py-10 w-full z-[999] px-0 md:px-5'>
         <motion.h1 
         initial={{x:-100}}
         whileInView={{x:0}}
         transition={{duration:1}}
         >
-          <h1 className='font-bold md:text-3xl text-2xl pl-10 font-serif shadow-b'>Prakash</h1>
+          <h1 className='font-bold md:text-3xl text-2xl pl-8 md:pl-10 font-serif shadow-b'>Chandra</h1>
         </motion.h1>    
             
         <div className='hidden lg:flex pr-16'>
@@ -34,7 +34,7 @@ function Navbar() {
                 to={item.href}
                 smooth={true}
                 duration={1000}
-                className="capitalize before:block before:w-2 before:h-2 before:mx-auto before:rounded-full  hover:before:bg-black cursor-pointer text-black hover:text-black"
+                className="capitalize before:block before:w-2 before:h-2 before:mx-auto before:rounded-full underline hover:before:bg-black cursor-pointer text-black hover:text-black"
                 >{item.name}
                 </Link>
               </li>
@@ -43,10 +43,10 @@ function Navbar() {
           </ul>
         </div>
         <div className='lg:hidden'>
-          {!isMenuOpen ? <BiMenu size={25} onClick={toggleMenu} className="mr-6"/> : <MdClose size={25} onClick={toggleMenu} className="mr-6 bg-yellow-700 rounded-full "/>}
+          {!isMenuOpen ? <BiMenu size={25} onClick={toggleMenu} className="mr-6"/> : <MdClose size={25} onClick={toggleMenu} className="mr-6 rounded-full "/>}
         </div>
-        {<div className={(isMenuOpen ? "block" : "hidden") + " lg:hidden absolute left-6 right-6 z-[999]"}>
-          <nav className="flex flex-col items-center self-end py-6 mt-10 space-y-6 bg-yellow-200 drop-shadow-md">
+        {<div className={(isMenuOpen ? "block" : "hidden") + " lg:hidden absolute  left-6 right-6 z-[999]"}>
+          <nav className="flex flex-col items-center self-end py-6 mt-10 space-y-6 bg-white drop-shadow-md">
             {data.menuItems.map((item:{name:string,href:string}) => (
               <li  key={item.name} className="list-none">
                 <Link

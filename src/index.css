@@ -6,4 +6,10 @@ a {
   font-weight: 500;
   text-decoration: inherit;
 }
+.back-img{
+  background-image: url('../public/images/back.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
 

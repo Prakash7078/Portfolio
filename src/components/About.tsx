@@ -2,7 +2,7 @@ import {motion} from 'framer-motion'
 import about from '/images/about.jpg'
 const About = () => {
   return (
-    <div id="#about" className="bg-slate-50 py-10">
+    <div id="#about" className=" py-10">
        <motion.div
           initial={{opacity:0}}
           whileInView={{opacity:1}}

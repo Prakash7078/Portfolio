@@ -31,6 +31,42 @@ const data={
     ],
     Projects:[
         {
+          name:"EventReply",
+          image:"/images/event.png",
+          codeurl:"https://gitlab.com/users/Prakash7078/contributed",
+          websiteurl:"https://m.dev.eventreply.com/",
+          desc:"Event Reply Mobile App Client Project",
+          tags: [
+              "#Ionic Framework",
+              '#Sass',
+              '#Angular'
+          ],
+        },
+        {
+          name:"Mythri Jewellers",
+          image:"/images/mythri.png",
+          codeurl:"https://github.com/TangledDevs/mythri-jewellers",
+          websiteurl:"https://mythri-jewellers.vercel.app/",
+          desc:"Mythri jewellers website",
+          tags: [
+              "#react",
+              '#Node JS',
+              '#Mongo DB',
+              '#Tailwind css'
+          ],
+        },
+        {
+          name:"Atoms Education",
+          image:"/images/atoms.png",
+          codeurl:"https://github.com/TangledDevs/atoms-education",
+          websiteurl:"https://education.atomsgroup.net/index.html",
+          desc:"Atoms Company Website",
+          tags: [
+              "#react",
+              '#Tailwind css'
+          ],
+        },
+        {
             name:"ChatMe",
             image:"/images/chat.png",
             codeurl:"https://github.com/Prakash7078/chatMe",
@@ -116,9 +152,23 @@ const data={
         name:"Web Development Intern",
         link1:"https://mythri-jewellers.vercel.app/",
         link2:"https://atoms-group.vercel.app/",
-      }
+      },
+      {
+        name:"Software Developer",
+        link1:"https://m.dev.eventreply.com/basic/landingpage",
+        link2:"https://dev.eventreply.com/basic/landingpage",
+      },
+
     ],
     Experinces:[
+      {
+        name:"Software Developer",
+        company:"7 Dots Smart Solutions(OPC) Pvt Ltd, Hyderabad",
+        duration:"Dec 2023-June 2024",
+        offer:"https://drive.google.com/file/d/1cCozPlg45F4Qy1WANsiH0IeABicf9zvm/view?usp=sharing",
+        certi:"https://drive.google.com/file/d/1cyve2uX9QZpKNDFI8gm8dyxMkXCZZcyV/view?usp=sharing",
+        desc:"As a software developer, I played a key role in developing major projects, including a mobile app and website for event management. My contributions were instrumental in shaping the functionality and success of these projects.",
+     },
       {
         name:"Web Development Intern",
         company:"Atoms Digital Solutions",
@@ -135,14 +185,7 @@ const data={
             certi:"https://drive.google.com/file/d/1fFp0zxdpB5SlJRHNHMMShfO3k2Zilb2b/view?usp=sharing",
             desc:"Internship position with the Risk Analytics division.During my tenure as a Risk Analyst at a dynamic company, I excelled in creating flexes, controls, KRIS tools, and dashboards for visualizing and managing risks. My role involved designing action plans, constructing approver forms, and implementing automated email systems using Node.js. This experience honed my skills in risk analysis, data visualization, and process optimization. ",
         },
-         {
-            name:"Software Developer Intern",
-            company:"7 Dots Smart Solutions(OPC) Pvt Ltd, Hyderabad",
-            duration:"Dec 2023-June 2024",
-            offer:"https://drive.google.com/file/d/1cCozPlg45F4Qy1WANsiH0IeABicf9zvm/view?usp=sharing",
-            certi:"https://drive.google.com/file/d/1cyve2uX9QZpKNDFI8gm8dyxMkXCZZcyV/view?usp=sharing",
-            desc:"Currently I am working as Software Developer.",
-        },
+         
         
     ],SkillsData : [
         {
