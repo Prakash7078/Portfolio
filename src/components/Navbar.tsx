@@ -20,7 +20,7 @@ function Navbar() {
         whileInView={{x:0}}
         transition={{duration:1}}
         >
-          <h1 className='font-bold md:text-3xl text-2xl pl-8 md:pl-10 font-serif shadow-b'>Chandra</h1>
+          <h1 className='font-bold md:text-3xl text-2xl pl-8 md:pl-20 font-serif shadow-b'>Chandra</h1>
         </motion.h1>    
             
         <div className='hidden lg:flex pr-16'>
