@@ -1,13 +1,18 @@
 import {motion} from 'framer-motion'
 import about from '/images/about.jpg'
+import { useState } from 'react';
 const About = () => {
+  const[show,setShow]=useState(false);
+  const handleDesc=()=>{
+    setShow(!show);
+  }
   return (
     <div id="#about" className=" py-10">
        <motion.div
           initial={{opacity:0}}
           whileInView={{opacity:1}}
           transition={{duration:1}}
-          className="max-w-7xl mx-auto px-8"
+          className=" mx-auto px-8"
           >
         <div className="lg:flex lg:items-center lg:gap-x-8">
         <motion.div
@@ -25,25 +30,27 @@ const About = () => {
           </div>
           </motion.div>
           <div className="mt-8 lg:mt-0 lg:w-1/2">
-            <div className="px-4 py-8 md:py-10 lg:py-12">
+            <div className="px-4 py-7 md:py-10 lg:py-12">
               <h2 className="text-3xl font-bold mb-4">About Me</h2>
               <p className="text-lg mb-4">
                 Hi, I'm Prakash, a Software developer. I have a
                 passion for creating web or mobile app applications that provide seamless user
                 experiences and solve real-world problems.
               </p>
-              <p className="text-lg mb-4">
+              {!show && <span className='font-semibold underline md:hidden' onClick={handleDesc} >Read More...</span>}
+              {show &&  <p className="text-lg mb-4">
                 I have built numerous web and mobile app applications, ranging from e-commerce
                 platforms to social networking sites. My expertise lies in
                 designing and developing scalable and efficient solutions that
                 adhere to industry best practices.
-              </p>
-              <p className="text-lg">
+              </p>}
+              {show && <p className="text-lg">
                 I'm excited to take on new challenges and contribute to
                 innovative projects. Feel free to connect with me through the
                 social links below or reach out via email. Let's build something
                 amazing together!
-              </p>
+              </p>}
+              
             </div>
           </div>
         </div>

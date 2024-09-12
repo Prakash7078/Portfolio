@@ -14,10 +14,10 @@ function Experience() {
                   rewind:true,
                   perPage: 1,
                   dots:true,
-                  speed: 2000,
+                  speed: 5000,
                   arrows:true,
-                  interval: 2000,
-                  autoplay:false,
+                  interval: 4000,
+                  autoplay:true,
                 }}
                 aria-label="React Splide Example"
                 data-splide-interval="1000"
@@ -25,15 +25,15 @@ function Experience() {
               {data.Experinces.map((item:{name:string,company:string,duration:string,offer:string,certi:string,desc:string})=>(
                       <SplideSlide  className="grid grid-cols-1 md:grid-cols-2">
                           <div><img src={work} alt='gif' className='lg:px-16'/></div>
-                          <div className='flex flex-col w-fit gap-3 px-4 py-6 cursor-pointer md:mx-auto mx-10  hover:scale-105 transition-all duration-500 text-center md:text-start'>
-                            <h1 className='font-bold text-2xl'>{item.name}</h1>
-                            <p className=''>{item.company}</p>
-                            <p>{item.duration}</p>
-                            <p className='leading-loose pr-6'>{item.desc}</p>
+                          <div className='flex flex-col  gap-3 px-4 py-6 cursor-pointer md:mx-auto mx-5 lg:justify-center   hover:scale-105 transition-all duration-500 text-center  md:text-start'>
+                            <h1 className='font-semibold text-2xl'>{item.name}</h1>
+                            <p className=' font-mono font-semibold'>{item.company}</p>
+                            <p className='font-serif'>{item.duration}</p>
+                            <p className='leading-loose tracking-tighter'>{item.desc}</p>
                             {data.projectslinks.filter((ite:{name:string})=>ite.name===item.name).map((it:{name:string,link1:string,link2:string})=>(
-                              <div key={it.name}>
+                              <div key={it.name} className='overflow-x-auto'>
                                 <Link to={it.link1} target='_blank'><p className='text-blue-800 mb-2'>{it.link1}</p></Link>
-                                <Link to={it.link2} target='_blank'><p className='text-blue-800 mb-2'>{it.link2}</p></Link>
+                               <Link to={it.link2} target='_blank'><p className='text-blue-800 mb-2'>{it.link2}</p></Link>
                               </div>
                             ))}
                             <div className='flex justify-evenly mt-2'>
