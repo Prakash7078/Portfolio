@@ -14,7 +14,7 @@ function Navbar() {
   
 
   return (
-    <div className='flex justify-between md:py-4 lg:py-6 py-6 xl:py-10 w-full z-[999] px-0 md:px-5'>
+    <div className='flex fixed w-full left-0 right-0 max-w-7xl mx-auto backdrop-blur-sm justify-between md:py-4 lg:py-6 py-6 xl:py-10 z-[999] px-0 md:px-5'>
         <motion.h1 
         initial={{x:-100}}
         whileInView={{x:0}}

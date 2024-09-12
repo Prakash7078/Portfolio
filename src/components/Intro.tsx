@@ -8,7 +8,7 @@ import boy from '/images/boy.avif';
 import {PiCertificateFill} from 'react-icons/pi'
 function Intro() {
   return (
-    <section id="#home" className="text-black body-font pt-5  pb-20 lg:py-44 ">
+    <section id="#home" className="text-black body-font pt-20 pb-20 lg:py-44 ">
       <div className="p-5  gap-2 flex flex-col-reverse  md:px-12   md:flex-row-reverse items-center" >
       <motion.div
           initial={{ scale: 0, rotate: 300}}

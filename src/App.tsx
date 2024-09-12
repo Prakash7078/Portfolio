@@ -12,14 +12,16 @@ import Common from "./components/Common"
 function App() {
   return (
     <BrowserRouter>
-    <div className='max-w-7xl mx-auto'>
-      <Common/>
-      <About/>
-      <Projects/>
-      <Experience/>
-      <Blogs/>
-      <Skills/>
-      <Contact/>
+    <div className=''>
+      <div className="max-w-7xl mx-auto">
+        <Common/>
+        <About/>
+        <Projects/>
+        <Experience/>
+        <Blogs/>
+        <Skills/>
+        <Contact/>
+      </div>
       <Footer/>
       <ToastContainer position="bottom-center" bodyClassName="text-center font-bold text-blue-900"/>
     </div>
