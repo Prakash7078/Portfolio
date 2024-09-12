@@ -1,11 +1,7 @@
 import {motion} from 'framer-motion'
 import about from '/images/about.jpg'
-import { useState } from 'react';
 const About = () => {
-  const[show,setShow]=useState(false);
-  const handleDesc=()=>{
-    setShow(!show);
-  }
+ 
   return (
     <div id="#about" className=" py-10">
        <motion.div
@@ -37,19 +33,18 @@ const About = () => {
                 passion for creating web or mobile app applications that provide seamless user
                 experiences and solve real-world problems.
               </p>
-              {!show && <span className='font-semibold underline md:hidden' onClick={handleDesc} >Read More...</span>}
-              {show &&  <p className="text-lg mb-4">
+              <p className="text-lg mb-4">
                 I have built numerous web and mobile app applications, ranging from e-commerce
                 platforms to social networking sites. My expertise lies in
                 designing and developing scalable and efficient solutions that
                 adhere to industry best practices.
-              </p>}
-              {show && <p className="text-lg">
+              </p>
+              <p className="text-lg">
                 I'm excited to take on new challenges and contribute to
                 innovative projects. Feel free to connect with me through the
                 social links below or reach out via email. Let's build something
                 amazing together!
-              </p>}
+              </p>
               
             </div>
           </div>
