@@ -12,7 +12,7 @@ import Common from "./components/Common"
 function App() {
   return (
     <BrowserRouter>
-    <div className=''>
+    <div className='max-w-7xl mx-auto'>
       <Common/>
       <About/>
       <Projects/>
