@@ -48,14 +48,14 @@ function Intro() {
           <div className="text-3xl  mb-4 font-medium lg:inline-block">
             <span className='text-darkblue'>{"_"}</span>
             <Typewriter 
-                words={['Web Developer','Software Developer','Enthusiastic Dev']} 
+                words={['Web Developer','Software Developer','Python Developer','Mobile App Developer']} 
                 loop={false} 
                 typeSpeed={100} 
                 deleteSpeed={100} 
                 delaySpeed={1000}/>
           </div>
-          <p className="text-lg md:text-xl">
-            Passionate about designing and developing innovative web and mobile applications.
+          <p className="text-lg md:text-xl  ">
+            Passionate developer with expertise in mobile/web app development and data analysis.
           </p>
         
           <div className="mt-7 flex gap-x-4 md:gap-x-5 justify-center md:justify-between">

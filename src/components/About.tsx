@@ -34,10 +34,9 @@ const About = () => {
                 experiences and solve real-world problems.
               </p>
               <p className="text-lg mb-4">
-                I have built numerous web and mobile app applications, ranging from e-commerce
-                platforms to social networking sites. My expertise lies in
-                designing and developing scalable and efficient solutions that
-                adhere to industry best practices.
+                Aspiring software developer with strong skills in mobile/web app development, 
+                data analysis, web scraping in Python, and managing databases 
+                like SQL and MongoDB."
               </p>
               <p className="text-lg">
                 I'm excited to take on new challenges and contribute to

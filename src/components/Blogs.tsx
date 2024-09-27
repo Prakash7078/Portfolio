@@ -6,7 +6,7 @@ const Blogs = () => {
 
   useEffect(() => {
     async function gql() {
-      await fetch('https://api.hashnode.com/', {
+      await fetch('https://api.hashnode.com', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
@@ -15,7 +15,7 @@ const Blogs = () => {
             {
               user(username: "chandra7078") {
                 publication {
-                  posts(page: 0) {
+                  posts() {
                     slug
                     title
                     brief
@@ -35,7 +35,7 @@ const Blogs = () => {
   
     }
     gql();
-  }, []);
+  },[]);
 
   return (
     <div id="#blogs" className="w-full bg-white">

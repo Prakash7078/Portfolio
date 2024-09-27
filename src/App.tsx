@@ -8,6 +8,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import { ToastContainer } from "react-toastify"
 import Common from "./components/Common"
+import StudyDetails from "./components/StudyDetails";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <div className=''>
       <div className="max-w-7xl mx-auto">
         <Common/>
+        <StudyDetails/>
         <About/>
         <Projects/>
         <Experience/>
