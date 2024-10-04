@@ -62,7 +62,7 @@ const StudyDetails=()=>{
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="Dec 2023 - June 2024"
+                    date="Jan 2020 - June 2024"
                     contentStyle={{ background: '#D8D8D8', color: 'black'}}
                     contentArrowStyle={{ borderRight: '7px solid  ' }}
                     iconStyle={{ background: 'blue', color: '#fff' }}
