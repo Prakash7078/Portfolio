@@ -3,7 +3,7 @@ import Navbar from "./Navbar"
 
 const Common=()=>{
     return(
-        <div className="m-0 rounded-b-md">
+        <div className="back-img m-0 rounded-b-md">
             <Navbar />
             <Intro />
         </div>
