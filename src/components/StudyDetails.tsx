@@ -8,7 +8,7 @@ const StudyDetails=()=>{
             <VerticalTimeline animate={true} lineColor="#708090">
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work  cursor-pointer"
-                    contentStyle={{background:'#ffdbbb', color: 'black', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'}}
+                    contentStyle={{background: 'linear-gradient(135deg, #ff7e5f, #feb47b)', color: 'black', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'}}
                     contentArrowStyle={{ borderRight: '7px solid  ' }}
                     date="Aug 2024 - present"
                     iconStyle={{ background: 'green', color: '#fff' }}
@@ -26,7 +26,7 @@ const StudyDetails=()=>{
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="Aug 2024 - May 2026"
-                    contentStyle={{background:'#ffdbbb', color: 'black', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'}}
+                    contentStyle={{background: 'linear-gradient(135deg, #ff7e5f, #feb47b)', color: 'black', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'}}
                     contentArrowStyle={{ borderRight: '7px solid  ' }}
                     iconStyle={{ background: '#D00000 ', color: '#fff' }}
                     icon={<MdCastForEducation />
@@ -44,7 +44,7 @@ const StudyDetails=()=>{
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentArrowStyle={{ borderRight: '7px solid  ' }}
-                    contentStyle={{background:'#ffdbbb', color: 'black', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'}}
+                    contentStyle={{background: 'linear-gradient(135deg, #ff7e5f, #feb47b)', color: 'black', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'}}
                     date="Dec 2023 - June 2024"
                     iconStyle={{ background: 'orange', color: '#fff' }}
                     icon={<MdCastForEducation />
@@ -63,7 +63,7 @@ const StudyDetails=()=>{
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="Jan 2020 - June 2024"
-                    contentStyle={{background:'#ffdbbb', color: 'black', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'}}
+                    contentStyle={{background: 'linear-gradient(135deg, #ff7e5f, #feb47b)', color: 'black', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'}}
                     contentArrowStyle={{ borderRight: '7px solid  ' }}
                     iconStyle={{ background: 'blue', color: '#fff' }}
                     icon={<MdCastForEducation />

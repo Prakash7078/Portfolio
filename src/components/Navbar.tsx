@@ -14,7 +14,7 @@ function Navbar() {
   
 
   return (
-    <div className='flex fixed w-full left-0 right-0 max-w-7xl mx-auto backdrop-blur-sm justify-between md:py-4 lg:py-6 py-6 xl:py-10 z-[999] px-0 md:px-5'>
+    <div className={`flex fixed w-full left-0 right-0 max-w-7xl mx-auto backdrop-blur-sm justify-between md:py-4 lg:py-6 py-6 xl:py-10 z-[999] px-0 md:px-5 ${isMenuOpen?'bg-orange-300':'bg-none'}`}>
         <motion.h1 
         initial={{x:-100}}
         whileInView={{x:0}}
@@ -45,24 +45,38 @@ function Navbar() {
         <div className='lg:hidden'>
           {!isMenuOpen ? <BiMenu size={25} onClick={toggleMenu} className="mr-6"/> : <MdClose size={25} onClick={toggleMenu} className="mr-6 rounded-full "/>}
         </div>
-        {<div className={(isMenuOpen ? "block" : "hidden") + " lg:hidden absolute  left-6 right-6 z-[999]"}>
-          <nav className="flex flex-col items-center self-end py-6 mt-10 space-y-6 bg-white drop-shadow-md">
-            {data.menuItems.map((item:{name:string,href:string}) => (
-              <li  key={item.name} className="list-none">
-                <Link
-                  to={item.href}
-                  duration={300}
-                  smooth={true}
-                  onClick={toggleMenu}
-                  className="capitalize text-black font-bold text-2xl"
-                  
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </nav>
-        </div>}
+        {isMenuOpen && (
+          <div className="min-h-[calc(100vh-4rem)] absolute inset-x-0 top-16 z-50 transition-all ease-in duration-1000 lg:hidden">
+            <div className="rounded-b-lg backdrop-blur-lg bg-orange-300 shadow-lg px-5 pb-4">
+              <motion.nav
+                initial={{y:-100}}
+                transition={{duration:0.7}}
+                whileInView={{y:0}}
+                
+              >
+              <nav className="flex flex-col gap-y-7 text-lg pl-6 pt-8 pb-4">
+                {data.menuItems.map((item) => {
+                    return (
+                      <Link
+                        key={item.name}
+                        onClick={() => setIsMenuOpen(false)}
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={750}
+                        to={item.href}
+                        className="cursor-pointer "
+                      >
+                        {item.name}
+                      </Link>
+                    );
+                  })}
+              </nav>
+                
+              </motion.nav>
+            </div>
+          </div>
+        )}
     </div>
   )
 }
