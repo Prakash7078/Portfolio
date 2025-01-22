@@ -45,14 +45,14 @@ const Contact = () => {
             <div>
               <FaPhoneAlt />
             </div>
-            <p>+91 9704688559</p>
+            <p>+1(316)3725784</p>
           </div>
           <div className="flex w-4/5 gap-2 md:flex-col items-center py-2 px-2 md:px-4 md:w-auto bg-stone-700 text-white rounded-md">
             <div>
               <HiMail />
             </div>
             <p>
-              <a href="mailto:chandraprakashbabu20@gmail.com" className="text-white hover:text-white">chandraprakashbabu20@gmail.com</a>
+              <a href="mailto:ponduriprakash7078@gmail.com" className="text-white hover:text-white">chandraprakashbabu20@gmail.com</a>
               </p>
           </div>
         </div>
