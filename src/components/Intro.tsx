@@ -75,7 +75,7 @@ function Intro() {
             whileInView={{y:0}}
             transition={{duration:0.7}}
             >
-              <a href="https://drive.google.com/file/d/1taIcjwlIz5n6p3g7_Jq_l5tS-Tt1Hh3t/view?usp=sharing" target='_blank' rel='noreferrer' >
+              <a href="https://drive.google.com/file/d/11x1DV7lX7hc2-rEV4lumK88hH3UpDlwR/view?usp=sharing" target='_blank' rel='noreferrer' >
                 <button className=" text-black inline-flex sm:font-medium py-2  bg-orange-600 border-2  sm:py-3 px-7 focus:outline-none hover:bg-white hover:border-orange-600 hover:text-black rounded-full text-md xl:px-10">
                   Get Resume
                 </button>
