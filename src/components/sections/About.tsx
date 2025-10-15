@@ -70,7 +70,7 @@ const About: React.FC = () => {
           </div>
           
           <a 
-            href="https://docs.google.com/document/d/1T_6Rtc3UDE_rGzUhwqLPmfFFWrlipYlL/edit?usp=sharing&ouid=100891520283484603709&rtpof=true&sd=true" target='_blank'
+            href="https://drive.google.com/file/d/1ovfDd5NB7pukwECHHJyv3h3x5L2AK7yu/view?usp=sharing" target='_blank'
             className="inline-flex items-center px-6 py-3 rounded-full bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors shadow-lg hover:shadow-primary-500/25"
           >
             <Download size={18} className="mr-2" />
