@@ -6,13 +6,21 @@ import TimelineItem from '../ui/TimelineItem';
 const experienceData = [
   {
     id:1,
+    title:"Software Quality Assurance Engineer",
+    subtitle:"T3-Wichita State Univeristy",
+    date:"Jun 2025 - Present",
+    offer:"https://drive.google.com/file/d/1XcABEWwwUqKHmOfGEiGiLSrJyCk7LI4s/view?usp=sharing",
+    description:"Streamlined bug tracking and task management using Azure DevOps, improving issue resolution efficiency and reducing turnaround time by 25%, Supporting a desktop app built with Electron, Angular, and SQLite.",
+  },
+  {
+    id:2,
     title:"Graduate Research Assistant",
     subtitle:"Wichita State Univeristy",
     date:"Sep2024 - Present",
     description:"Managed multiple concurrent research projects under three professors, prioritizing tasks, meeting deadlines, and maintaining clear communication to ensure timely delivery of code and documentation.",
   },
   {
-    id: 2,
+    id: 3,
     title: "Software Developer",
     subtitle: '7 Dots Smart Solutions(OPC) Pvt Ltd, Hyderabad',
     date: 'Dec 2023 - June 2024',
@@ -21,7 +29,7 @@ const experienceData = [
     description: 'As a software developer, I played a key role in developing major projects, including a mobile app and website for event management. My contributions were instrumental in shaping the functionality and success of these projects.',
   },
   {
-    id:3,
+    id:4,
     title:"Web Development Intern",
     subtitle:"Atoms Digital Solutions",
     duration:"Sept 2023-Dec 2023",
@@ -30,7 +38,7 @@ const experienceData = [
     description:"During my internship, I gained hands-on experience in developing complete projects, encompassing both frontend and backend aspects. This involved utilizing various AWS services, including AWS S3, EC2, and ECR.",
   },
   {
-    id:4,
+    id:5,
     title:"Risk Analyst Intern",
     subtitle:"Dynamatix Analytics Pvt Ltd",
     duration:"May 2022-March 2023",
