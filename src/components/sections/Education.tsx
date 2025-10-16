@@ -15,7 +15,7 @@ const educationData = [
     id: 3,
     title: 'Bachelor of Science in Computer Science',
     subtitle: 'Vasireddy Venkatadri International Technological University',
-    date: '2012 - 2016',
+    date: '2020 - 2024',
     description: 'Focused on Software Engineering and Database Systems. Participated in multiple hackathons and coding competitions.',
   },
   
