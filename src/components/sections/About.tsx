@@ -45,8 +45,7 @@ const About: React.FC = () => {
           </h3>
           
           <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-            I'm a data analyst and developer skilled in scraping, cleaning, and transforming large datasets into valuable insights. I build clean, efficient web and mobile apps, managing multiple projects with strong attention to detail.
-            Passionate about solving problems with smart code and creating smooth user experiences.
+           I am an experienced Full Stack Developer with strong expertise in building modern web and mobile applications and integrating AI-powered features into real-world products. I work across React, Angular, Node.js, Express.js, Ionic, SQL, and MongoDB to create clean, scalable, and user-friendly solutions. I am also skilled in data analysis, web scraping, data cleaning, and transforming large datasets into meaningful insights. Through my research and development work, I have handled 100k+ records, used Python, Selenium, Pandas, SQL, and OpenAI APIs to extract and structure complex data, and applied machine learning techniques to improve accuracy and automation. I enjoy solving challenging problems with smart code, building efficient systems, and delivering smooth user experiences across both frontend and backend development.
           </p>
           
           <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
@@ -55,13 +54,13 @@ const About: React.FC = () => {
           
           {/* Personal Info */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <Calendar size={20} className="text-primary-600 dark:text-primary-400 mr-3" />
               <span className="text-gray-700 dark:text-gray-300">Born: May, 2003</span>
-            </div>
+            </div> */}
             <div className="flex items-center">
               <MapPin size={20} className="text-primary-600 dark:text-primary-400 mr-3" />
-              <span className="text-gray-700 dark:text-gray-300">Andhra Pradesh, India</span>
+              <span className="text-gray-700 dark:text-gray-300">Wichita, KS USA</span>
             </div>
             <div className="flex items-center">
               <Mail size={20} className="text-primary-600 dark:text-primary-400 mr-3" />
@@ -70,7 +69,7 @@ const About: React.FC = () => {
           </div>
           
           <a 
-            href="https://drive.google.com/file/d/1ovfDd5NB7pukwECHHJyv3h3x5L2AK7yu/view?usp=sharing" target='_blank'
+            href="https://drive.google.com/file/d/1LbYwYS4NoRahbrKuCdrjsalUPN1c4CMC/view?usp=sharing" target='_blank'
             className="inline-flex items-center px-6 py-3 rounded-full bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors shadow-lg hover:shadow-primary-500/25"
           >
             <Download size={18} className="mr-2" />

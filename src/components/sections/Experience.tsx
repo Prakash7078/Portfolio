@@ -4,13 +4,13 @@ import AnimatedSection from '../ui/AnimatedSection';
 import TimelineItem from '../ui/TimelineItem';
 
 const experienceData = [
-  {
+   {
     id:1,
-    title:"Software Quality Assurance Engineer",
+    title:"Software Engineer",
     subtitle:"T3-Wichita State Univeristy",
     date:"Jun 2025 - Present",
     offer:"https://drive.google.com/file/d/1XcABEWwwUqKHmOfGEiGiLSrJyCk7LI4s/view?usp=sharing",
-    description:"Streamlined bug tracking and task management using Azure DevOps, improving issue resolution efficiency and reducing turnaround time by 25%, Supporting a desktop app built with Electron, Angular, and SQLite.",
+    description:"Built and maintained web and mobile applications, developed scalable APIs, integrated AI-powered features, resolved production issues, and worked with large datasets for analysis and automation. Also streamlined bug tracking and task management using Azure DevOps while supporting a desktop app built with Electron, Angular, and SQLite.",
   },
   {
     id:2,

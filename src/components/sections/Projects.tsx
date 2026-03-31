@@ -9,6 +9,7 @@ import atoms from '/Images/atoms.png';
 import chat from '/Images/chat.png';
 import clubs from '/Images/clubs.png';
 import food from '/Images/thumbanaliaPP.png';
+import asia from '/Images/asiabazzar.png';
 import flappy from '/Images/flappy-bird.jpg';
 const projectsData: Project[] = [
   {
@@ -22,12 +23,12 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: 'Mythri Jewellers',
-    description: 'Mythri jewellers website',
-    image: mythri,
-    tags: ['React', 'Node JS', 'Mongo DB', 'Tailwind css','Express JS'],
-    github: 'https://github.com/TangledDevs/mythri-jewellers',
-    demo: 'https://mythri-jewellers.vercel.app/',
+    title: 'AsiaBazzar',
+    description: 'Grocery and Cafee website',
+    image: asia,
+    tags: ['React', 'JS','Express JS','Mongo DB','Node JS','JWT','Redux-toolkit','AWS s3', 'Angular'],
+    github: 'https://github.com/Prakash7078/AsiaBazar',
+    demo: 'https://theasiabazzar.com/',
   },
   {
     id: 3,
@@ -74,6 +75,7 @@ const projectsData: Project[] = [
     github: 'https://github.com/Prakash7078/Unity-FlappyBird',
     tags: ['Unity 3D', 'C#'],   
   },
+   
 ];
 
 // Extract all unique tags

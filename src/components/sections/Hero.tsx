@@ -74,10 +74,11 @@ const Hero: React.FC = () => {
               Contact Me
             </a>
             <a 
-              href="#projects" 
+              href="https://drive.google.com/drive/folders/1X39-5TitgldeoQ9uJD-ot27UM2VNph6b?usp=sharing"
+              target='blank'
               className="px-8 py-3 rounded-full bg-white/10 dark:bg-dark-200/50 backdrop-blur-sm text-gray-800 dark:text-gray-200 font-medium border border-gray-200 dark:border-gray-700 hover:bg-white/20 dark:hover:bg-dark-200/70 transition-all duration-300 hover:scale-105"
             >
-              View Projects
+              Certifications
             </a>
           </motion.div>
         </motion.div>
