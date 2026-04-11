@@ -24,7 +24,7 @@ const experienceData = [
     title: "Software Developer",
     subtitle: '7 Dots Smart Solutions(OPC) Pvt Ltd, Hyderabad',
     date: 'Dec 2021 - June 2024',
-    certi:"https://drive.google.com/file/d/1cyve2uX9QZpKNDFI8gm8dyxMkXCZZcyV/view?usp=sharing",
+    // certi:"https://drive.google.com/file/d/1cyve2uX9QZpKNDFI8gm8dyxMkXCZZcyV/view?usp=sharing",
     description: 'As a software developer, I played a key role in developing major projects, including a mobile app and website for event management. My contributions were instrumental in shaping the functionality and success of these projects.',
   },
  
