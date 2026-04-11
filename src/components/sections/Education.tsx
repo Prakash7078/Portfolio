@@ -11,13 +11,13 @@ const educationData = [
     date: '2024 - 2026',
     description: 'Specialized in Artificial Intelligence, Data Analysis, Web & Mobile Technologies.',
   },
-  {
-    id: 3,
-    title: 'Bachelor of Science in Computer Science',
-    subtitle: 'Vasireddy Venkatadri International Technological University',
-    date: '2020 - 2024',
-    description: 'Focused on Software Engineering and Database Systems. Participated in multiple hackathons and coding competitions.',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Bachelor of Science in Computer Science',
+  //   subtitle: 'Vasireddy Venkatadri International Technological University',
+  //   date: '2020 - 2024',
+  //   description: 'Focused on Software Engineering and Database Systems. Participated in multiple hackathons and coding competitions.',
+  // },
   
  
 ];
