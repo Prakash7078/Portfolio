@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 import AnimatedSection from '../ui/AnimatedSection';
-import { Download, Calendar, MapPin, Mail } from 'lucide-react';
+import { Download, MapPin, Mail } from 'lucide-react';
 import mine from '/Images/boy.avif';
 const About: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const About: React.FC = () => {
           <div className="aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 p-5 shadow-xl">
             <img
               src={mine}
-              alt="John Doe"
+              alt="Chandra Prakash Babu Ponduri"
               className="rounded-xl object-cover w-full h-full"
             />
           </div>
@@ -41,15 +41,15 @@ const About: React.FC = () => {
           transition={{ duration: 0.7 }}
         >
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-            I'm <span className="text-primary-600 dark:text-primary-400">Chandra Prakash Babu Ponduri</span>, a Full-Stack Developer
+            I'm <span className="text-primary-600 dark:text-primary-400">Chandra Prakash Babu Ponduri</span>, a Full-Stack Software Engineer
           </h3>
           
           <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-           I am an experienced Full Stack Developer with strong expertise in building modern web and mobile applications and integrating AI-powered features into real-world products. I work across React, Angular, Node.js, Express.js, Ionic, SQL, and MongoDB to create clean, scalable, and user-friendly solutions. I am also skilled in data analysis, web scraping, data cleaning, and transforming large datasets into meaningful insights. Through my research and development work, I have handled 100k+ records, used Python, Selenium, Pandas, SQL, and OpenAI APIs to extract and structure complex data, and applied machine learning techniques to improve accuracy and automation. I enjoy solving challenging problems with smart code, building efficient systems, and delivering smooth user experiences across both frontend and backend development.
+            I have 3+ years of experience building Java and Spring Boot microservices, cloud-native applications on AWS, and production-grade applied-AI features using OpenAI APIs, retrieval-augmented generation, and vector search. I own services end-to-end, from API design and event-driven architecture to CI/CD, monitoring, and production support.
           </p>
           
           <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-            I enjoy taking complex problems and turning them into simple, beautiful solutions. When I'm not coding, you'll find me hiking, reading, or experimenting with new technologies.
+            My work has improved application response times by 35%, shortened deployment cycles by 50%, and increased AI-powered retrieval accuracy by 45%. I also build responsive React and Angular interfaces, cross-platform mobile apps, and data workflows that turn large datasets into useful insights.
           </p>
           
           {/* Personal Info */}
@@ -60,7 +60,7 @@ const About: React.FC = () => {
             </div> */}
             <div className="flex items-center">
               <MapPin size={20} className="text-primary-600 dark:text-primary-400 mr-3" />
-              <span className="text-gray-700 dark:text-gray-300">Wichita, KS USA</span>
+              <span className="text-gray-700 dark:text-gray-300">Kansas, USA</span>
             </div>
             <div className="flex items-center">
               <Mail size={20} className="text-primary-600 dark:text-primary-400 mr-3" />

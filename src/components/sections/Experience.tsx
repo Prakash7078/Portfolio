@@ -7,25 +7,23 @@ const experienceData = [
    {
     id:1,
     title:"Software Engineer",
-    subtitle:"T3-Wichita State Univeristy",
-    date:"Jun 2025 - Present",
-    offer:"https://drive.google.com/file/d/1XcABEWwwUqKHmOfGEiGiLSrJyCk7LI4s/view?usp=sharing",
-    description:"Built and maintained web and mobile applications, developed scalable APIs, integrated AI-powered features, resolved production issues, and worked with large datasets for analysis and automation. Also streamlined bug tracking and task management using Azure DevOps while supporting a desktop app built with Electron, Angular, and SQLite.",
+    subtitle:"Cerner · Wichita, KS",
+    date:"Jan 2026 - Present",
+    description:"Build enterprise full-stack applications with Java, Spring Boot, Angular, React Native, SQL, .NET Core, and OpenAI APIs. Designed Kafka-based microservices, Redis caching, cloud CI/CD workflows, and a production RAG platform that improved retrieval accuracy by 45%.",
   },
   {
     id:2,
     title:"Graduate Research Assistant",
-    subtitle:"Wichita State Univeristy",
-    date:"Sep2024 - Present",
-    description:"Managed multiple concurrent research projects under three professors, prioritizing tasks, meeting deadlines, and maintaining clear communication to ensure timely delivery of code and documentation.",
+    subtitle:"Wichita State University · Wichita, KS",
+    date:"Sep 2024 - May 2025",
+    description:"Built Python, Selenium, SQL, and Pandas ETL pipelines for 110,000+ research records. Applied TF-IDF, cosine similarity, and DBSCAN clustering to reach 98% entity-matching accuracy, then delivered Power BI dashboards and semantic-search workflows.",
   },
   {
     id: 3,
-    title: "Software Developer",
-    subtitle: '7 Dots Smart Solutions(OPC) Pvt Ltd, Hyderabad',
-    date: 'Dec 2021 - June 2024',
-    // certi:"https://drive.google.com/file/d/1cyve2uX9QZpKNDFI8gm8dyxMkXCZZcyV/view?usp=sharing",
-    description: 'As a software developer, I played a key role in developing major projects, including a mobile app and website for event management. My contributions were instrumental in shaping the functionality and success of these projects.',
+    title: "Software Engineer",
+    subtitle: '7 Dots Smart Solutions · Hyderabad, India',
+    date: 'Jan 2022 - Jul 2024',
+    description: 'Developed enterprise applications with Java, Spring Boot, React, Angular, SQL, and MongoDB. Architected 15+ microservices, resolved 130+ production issues, and deployed AWS applications with Docker, Kubernetes, CI/CD, JWT, and role-based access control.',
   },
  
   
@@ -50,7 +48,6 @@ const Experience: React.FC = () => {
               date={item.date}
               description={item.description}
               offer={item.offer}
-              certi={item.certi}
               type="experience"
               index={index}
             />

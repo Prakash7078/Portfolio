@@ -22,9 +22,6 @@ const TagCloud: React.FC<TagCloudProps> = ({ tags }) => {
         // Size based on value
         const size = 16 + tag.value * 8;
         
-        // Animation duration
-        const duration = 20 + Math.random() * 10;
-        
         return (
           <motion.div
             key={index}

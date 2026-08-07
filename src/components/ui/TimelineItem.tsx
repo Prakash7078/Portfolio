@@ -7,8 +7,8 @@ interface TimelineItemProps {
   subtitle: string;
   date: string;
   description: string;
-  offer: string,
-  certi: string,
+  offer?: string;
+  certi?: string;
   type: 'education' | 'experience';
   index: number;
 }
@@ -71,11 +71,12 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         </div>
         <h4 className="text-gray-800 dark:text-gray-200 font-medium mb-2">{subtitle}</h4>
         <p className="text-gray-600 dark:text-gray-400 leading-tight">{description}</p>
-        <div
-          className='flex justify-between items-center mt-5 ml-2 underline'>
-            <a href={offer} target='_blank'>Offer</a>
-            <a href={certi} target='_blank'>complete</a>
-        </div>
+        {(offer || certi) && (
+          <div className='flex justify-between items-center mt-5 ml-2 underline'>
+            {offer && <a href={offer} target='_blank' rel='noreferrer'>Offer</a>}
+            {certi && <a href={certi} target='_blank' rel='noreferrer'>Certificate</a>}
+          </div>
+        )}
       </motion.div>
     </div>
   );

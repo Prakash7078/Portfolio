@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             </a>
            
             <a 
-              href="mailto:cxponduri@shockers.wichita.edu" 
+              href="mailto:ponduriprakash7078@gmail.com"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               aria-label="Email"
             >

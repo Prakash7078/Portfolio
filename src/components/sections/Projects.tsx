@@ -4,13 +4,14 @@ import SectionTitle from '../ui/SectionTitle';
 import AnimatedSection from '../ui/AnimatedSection';
 import ProjectCard, { Project } from '../ui/ProjectCard';
 import event from '/Images/event.png'
-import mythri from '/Images/mythri.png';
 import atoms from '/Images/atoms.png';
 import chat from '/Images/chat.png';
 import clubs from '/Images/clubs.png';
 import food from '/Images/thumbanaliaPP.png';
 import asia from '/Images/asiabazzar.png';
 import flappy from '/Images/flappy-bird.jpg';
+import accessibility from '/Images/vizling.png';
+import research from '/Images/ml.jpg';
 const projectsData: Project[] = [
   {
     id: 1,
@@ -74,6 +75,21 @@ const projectsData: Project[] = [
     image:flappy,
     github: 'https://github.com/Prakash7078/Unity-FlappyBird',
     tags: ['Unity 3D', 'C#'],   
+  },
+  {
+    id: 8,
+    title: 'Vizling AI Accessibility Mobile App',
+    description: 'Accessibility-focused mobile app for blind and low-vision users featuring speech-to-text, conversational AI, gesture controls, and cross-platform Android and iOS workflows.',
+    image: accessibility,
+    demo: 'https://vizling.org/',
+    tags: ['Mobile', 'REST APIs', 'Speech-to-Text', 'Conversational AI', 'Accessibility'],
+  },
+  {
+    id: 9,
+    title: 'Research Analytics & Author Ranking Platform',
+    description: 'Analytics platform processing 110,000+ academic records to generate author rankings, publication impact scores, university metrics, and research trends.',
+    image: research,
+    tags: ['Python', 'SQL', 'Power BI', 'Selenium', 'Pandas', 'DBSCAN'],
   },
    
 ];

@@ -45,15 +45,12 @@ const skillGroups: SkillGroup[] = [
     skills: [
       'React.js',
       'Angular',
-      'Next.js',
       'JavaScript',
       'TypeScript',
       'HTML5',
       'CSS3',
-      'Tailwind CSS',
-      'Material Tailwind',
       'Redux Toolkit',
-      'Responsive Web Design',
+      'Electron',
     ],
   },
   {
@@ -66,14 +63,20 @@ const skillGroups: SkillGroup[] = [
     accent: 'from-violet-500 to-indigo-400',
     depth: 88,
     skills: [
+      'Java',
+      'Spring Boot',
+      'Spring MVC',
+      'Spring Security',
+      'Hibernate',
+      'JPA',
+      'REST APIs',
+      'Microservices',
+      'Apache Kafka',
       'Node.js',
       'Express.js',
-      'REST APIs',
-      'API Development',
-      'Middleware',
-      'Web Services',
+      '.NET Core',
       'JWT',
-      'Server-Side Development',
+      'OAuth2',
     ],
   },
   {
@@ -87,14 +90,14 @@ const skillGroups: SkillGroup[] = [
     depth: 92,
     skills: [
       'Python',
-      'Pandas',
-      'Selenium',
-      'OpenAI API',
-      'Generative AI',
-      'Machine Learning',
-      'Scikit-learn',
-      'Data Analysis',
-      'Excel',
+      'OpenAI APIs',
+      'Large Language Models',
+      'Prompt Engineering',
+      'Vector Embeddings',
+      'Semantic Search',
+      'RAG',
+      'Power BI',
+      'TF-IDF',
       'DBSCAN',
       'Cosine Similarity',
     ],
@@ -111,13 +114,13 @@ const skillGroups: SkillGroup[] = [
     skills: [
       'SQL',
       'MySQL',
+      'PostgreSQL',
+      'SQL Server',
       'MongoDB',
-      'Oracle',
-      'SQL Databases',
-      'NoSQL Databases',
-      'Normalization',
-      'Triggers',
-      'Backup and Recovery',
+      'ChromaDB',
+      'Redis',
+      'Database Indexing',
+      'Schema Design',
     ],
   },
   {
@@ -131,17 +134,20 @@ const skillGroups: SkillGroup[] = [
     depth: 82,
     skills: [
       'AWS',
-      'Firebase',
-      'Azure',
-      'GCP',
+      'EC2',
+      'S3',
+      'RDS',
+      'CloudWatch',
+      'Microsoft Azure',
       'Docker',
+      'Kubernetes',
+      'GitHub Actions',
+      'Azure DevOps',
+      'Jenkins',
+      'GitLab CI/CD',
+      'OpenShift',
       'Git',
-      'GitHub',
-      'GitLab',
-      'Jira',
       'Postman',
-      'Swagger',
-      'Jupyter Notebook',
     ],
   },
   {
@@ -154,12 +160,11 @@ const skillGroups: SkillGroup[] = [
     accent: 'from-rose-500 to-red-400',
     depth: 80,
     skills: [
-      'Ionic Framework',
       'React Native',
-      'Android Studio',
-      'Mobile UI Flows',
-      'App Debugging',
+      'Ionic Framework',
       'Cross-Platform Development',
+      'Accessibility Testing',
+      'Gesture Controls',
     ],
   },
 ];
@@ -172,8 +177,8 @@ const spotlightStats = [
   },
   {
     label: 'AI + Data',
-    value: 'Research Ready',
-    detail: 'Scraping, cleaning, analysis, and OpenAI integration',
+    value: 'RAG + LLMs',
+    detail: 'OpenAI APIs, embeddings, semantic search, and vector databases',
   },
   {
     label: 'Platforms',
@@ -182,8 +187,8 @@ const spotlightStats = [
   },
   {
     label: 'Workflow',
-    value: 'Ship Fast',
-    detail: 'Git, cloud tools, testing, debugging, and iteration',
+    value: 'Cloud Native',
+    detail: 'AWS, Docker, Kubernetes, CI/CD, monitoring, and production support',
   },
 ];
 
@@ -230,17 +235,16 @@ const Skills: React.FC = () => {
             </div>
 
             <h3 className="text-3xl font-bold leading-tight text-slate-900 dark:text-white md:text-4xl">
-              Experienced full stack development backed by data analysis, AI integration, and mobile app delivery.
+              Full-stack engineering backed by Java microservices, cloud delivery, applied AI, and data systems.
             </h3>
 
             <p className="mt-5 max-w-3xl text-base leading-8 text-slate-600 dark:text-slate-300">
-              My work combines product engineering and data-heavy problem solving. I build responsive websites,
-              scalable backend systems, and mobile apps, while also handling scraping, cleaning, analysis, and AI-based
-              enrichment of large datasets.
+              I build Spring Boot microservices, responsive web and mobile experiences, and cloud-native delivery pipelines.
+              My applied-AI work includes OpenAI APIs, RAG, embeddings, semantic search, and production vector databases.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              {['React', 'Node.js', 'Python', 'OpenAI', 'SQL', 'Ionic', 'MongoDB', 'AWS'].map((item) => (
+              {['Java', 'Spring Boot', 'React', 'Angular', 'AWS', 'Kafka', 'OpenAI', 'RAG'].map((item) => (
                 <span
                   key={item}
                   className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800/70 dark:text-slate-200"

@@ -6,10 +6,10 @@ import TimelineItem from '../ui/TimelineItem';
 const educationData = [
   {
     id: 2,
-    title: 'Master of Computer Science',
+    title: 'Master of Science in Computer Science',
     subtitle: 'Wichita State University',
-    date: '2024 - 2026',
-    description: 'Specialized in Artificial Intelligence, Data Analysis, Web & Mobile Technologies.',
+    date: 'Aug 2024 - May 2026',
+    description: 'Graduate study in computer science with applied work spanning AI, data analysis, software engineering, and web and mobile technologies.',
   },
   // {
   //   id: 3,

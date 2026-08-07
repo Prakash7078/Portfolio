@@ -39,9 +39,9 @@ const Hero: React.FC = () => {
               type: "spring",
               stiffness: 100
             }}
-            className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-600 via-primary-600 to-cyan-600 dark:from-violet-400 dark:via-primary-400 dark:to-cyan-400 mb-6"
+            className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-600 via-primary-600 to-cyan-600 dark:from-violet-400 dark:via-primary-400 dark:to-cyan-400 mb-6"
           >
-            Prakash Ponduri
+            Chandra Prakash Babu Ponduri
           </motion.h1>
           <motion.div
             initial={{ opacity: 0 }}
@@ -51,9 +51,9 @@ const Hero: React.FC = () => {
           >
             <TypeAnimation
               sequence={[
-                'Software Developer', 2000,
-                'Data Analyst', 2000,
-                'Full-Stack Developer', 2000,
+                'Full-Stack Software Engineer', 2000,
+                'Java & Spring Boot Developer', 2000,
+                'Applied AI Engineer', 2000,
               ]}
               wrapper="span"
               speed={50}

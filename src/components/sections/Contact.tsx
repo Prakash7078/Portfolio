@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-base font-medium text-gray-900 dark:text-white">Location</h4>
-                <p className="text-gray-600 dark:text-gray-400 mt-1">Wichita, KS</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-1">Kansas, USA</p>
               </div>
             </div>
             
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-base font-medium text-gray-900 dark:text-white">Email</h4>
-                <p className="text-gray-600 dark:text-gray-400 mt-1">cxponduri@shockers.wichita.edu</p>
+                <a className="text-gray-600 dark:text-gray-400 mt-1 block" href="mailto:ponduriprakash7078@gmail.com">ponduriprakash7078@gmail.com</a>
               </div>
             </div>
             
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-base font-medium text-gray-900 dark:text-white">Phone</h4>
-                <p className="text-gray-600 dark:text-gray-400 mt-1">+1 (316) 372-5784</p>
+                <a className="text-gray-600 dark:text-gray-400 mt-1 block" href="tel:+16282364310">+1 628-236-4310</a>
               </div>
             </div>
           </div>
